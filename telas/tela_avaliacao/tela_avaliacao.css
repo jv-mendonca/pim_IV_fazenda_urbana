@@ -1,0 +1,159 @@
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    background-color: #514869;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.principal-avaliacao {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    background-color: #201b2c;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.esquerda-avaliacao {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+}
+
+.esquerda-avaliacao h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.imagem-esquerda-avaliacao {
+    width: 80%;
+    max-width: 300px; 
+    height: auto;
+    object-fit: contain;
+}
+
+.direita-avaliacao {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card-avaliacao {
+    background-color: #514869; 
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: #77ffc0;
+}
+
+.card-avaliacao h1 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.campo-texto {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.campo-texto i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.campo-texto input, .campo-texto select, .campo-texto textarea {
+    width: 100%;
+    padding: 10px;
+    padding-left: 35px;
+    border: none;
+    border-radius: 8px;
+    background-color: #201b2c;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0px 0px 2px #77ffc0;
+    transition: 0.3s;
+}
+
+.campo-texto input:focus, .campo-texto select:focus, .campo-texto textarea:focus {
+    outline: none;
+    box-shadow: 0 0 6px #77ffc0; /* Cor de foco ajustada */
+}
+
+.botao-avaliacao {
+    background-color: #77ffc0; /* Cor do botão */
+    color: #201b2c; /* Cor do texto do botão */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.botao-avaliacao:hover {
+    background-color: #55e3a0; /* Cor do botão ao passar o mouse */
+}
+
+/* Transição suave ao clicar */
+.botao-avaliacao.enviando {
+    background-color: #77ffc0; /* Cor muda suavemente */
+    transition: background-color 1s ease; /* Duração da transição */
+}
+
+.retorno {
+    margin-top: 20px;
+    text-align: center;
+    color: #77ffc0;
+    font-size: 1.2em;
+}
+
+/* Estilo para corrigir preenchimento automático (autocomplete) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #201b2c inset !important; /* Cor de fundo do campo */
+    -webkit-text-fill-color: white !important; /* Cor do texto */
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Aplicando o mesmo para select e textarea, se necessário */
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+select:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #201b2c inset !important; /* Cor de fundo do campo */
+    -webkit-text-fill-color: white !important; /* Cor do texto */
+}

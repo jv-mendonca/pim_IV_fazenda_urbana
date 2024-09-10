@@ -1,0 +1,865 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+html{
+    height: 320vh;
+    background-color: #514869;
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+    z-index: 1;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav li a:hover{
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+header{
+    width: 100%;
+    padding: 60px 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+header.rolagem{
+    background-color: #000000;   
+    box-shadow: 0 0 8px #77ffc0;
+    
+}
+
+header.rolagem a, header.rolagem i{
+    color: #77ffc0;
+    transition: 1s;
+}
+
+
+header i{
+    font-size: 30px;
+    color: rgb(255, 255, 255);   
+}
+
+header ul{
+    list-style-type:  none;
+    
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0px 40px;
+}
+
+
+header ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.btn-MENU button{
+    padding: 1px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color:#77ffc0;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .2s;
+    
+}
+
+.btn-MENU button:hover{
+    box-shadow: 0px 0px 8px #77ffc0;
+    transform: scale(1.05);
+    background-color:#77ffc0;
+}
+
+.btn-contato button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #201b2c;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.banner{
+    height: 100vh;
+    background: #201b2c;
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1{
+    font-size: 4em;
+}
+
+.banner h1 span{
+    color: #77ffc0;
+}
+
+.btn-MENU{
+    z-index: 1;
+}
+
+.hamburger::after,
+.hamburger::before{
+    content: "   ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+.nav-list {
+    position: fixed;
+    top: 0; 
+    right: -1500px; 
+    width: 200px; 
+    height: 100vh; 
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 8px #77ffc0;
+    transition: 1s ease-out;
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    gap: 90px; 
+    pointer-events: none;
+}
+
+.nav.active .nav-list {
+    right: 0; 
+    pointer-events: all;
+}
+
+.nav-list a {
+    font-size: 24px;
+    opacity: 0;
+}
+
+.nav-list :nth-last-child(1) a {
+    transition: 0.5s 0.2s;
+}
+
+.nav-list :nth-last-child(2) a {
+    transition: 0.5s 0.4s;
+}
+
+.nav-list :nth-last-child(3) a {
+    transition: 0.5s 0.6s; 
+}
+
+.nav.active .nav-list a {
+    opacity: 1;
+}
+
+.nav.active .hamburger {
+    position: fixed;
+    top: 26px;
+    right: 16px;
+    border-top-color: transparent;
+}
+
+.nav.active .hamburger::before {
+    transform: rotate(135deg);
+}
+
+.nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+#meu-pau {
+    background-color: #514869;
+    height: 72vh;
+    background-image: image-set(url(images/urban-farm-thailand\ \(1\).jpg));
+    background-repeat: no-repeat;
+    border-image: auto;
+    position: relative; 
+}
+
+.TEXTORT{
+    position: relative; 
+    margin-bottom: 20px;
+    text-align: left; 
+    
+}
+
+.titulo{
+    position: absolute; 
+    left: 54%;
+    color: black; 
+    font-size: 3em; 
+}
+
+.TEXTORT h1 span{
+    color: #77ffc0;
+}
+
+section.TEXTODOPAG{
+    padding: 0px 10%;
+}
+
+section.TEXTODOPAG.flex{
+    gap: 10px;
+}
+
+.TEXTOBOX h3{
+    color: #77ffc0;
+    font-size: 2em;
+}
+
+
+
+
+.TEXTODOPAG .TEXTOBOX{
+    color: rgb(255, 255, 255);
+    padding: 0px 4%;
+    border-radius: 15px;
+    transition: .2s;
+    margin-left: 48%;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+   line-height: 1.5;
+   margin-top: 130px; 
+}
+
+.TEXTODOPAG .TEXTOBOX:hover{
+    box-shadow: 0 0 8px #77ffc0;
+}
+
+.TEXTODOPAG .TEXTOBOX i{
+    font-size: 70px;
+    color: #77ffc0;
+}
+
+/* OUTRA PAGINA*/
+
+#OTARIO {
+    background-color: #514869;
+    height: 80vh ;
+}
+#CAPACETE-PENIANO {
+    background-color: #201b2c;
+    height: 60vh ;
+}
+
+.clickaqui {
+    padding: 1px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #77ffc0;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.clickaqui:hover {
+    box-shadow: 0px 0px 8px #77ffc0;
+    transform: scale(1.05);
+    background-color: #77ffc0;
+}
+
+.menu {
+    --s: 20px; /* control the size */
+    --c: rgb(0, 0, 0); /* the color */
+    
+    height: var(--s);
+    aspect-ratio: 1;
+    border: none;
+    padding: 0;
+    border-inline: calc(var(--s)/2) solid #0000; 
+    box-sizing: content-box;
+    --_g1: linear-gradient(var(--c) 20%,#0000 0 80%,var(--c) 0) 
+           no-repeat content-box border-box;
+    --_g2: radial-gradient(circle closest-side at 50% 12.5%,var(--c) 95%,#0000) 
+           repeat-y content-box border-box;
+    background: 
+      var(--_g2) left  var(--_p,0px) top,
+      var(--_g1) left  calc(var(--s)/10 + var(--_p,0px)) top,
+      var(--_g2) right var(--_p,0px) top,
+      var(--_g1) right calc(var(--s)/10 + var(--_p,0px)) top;
+    background-size: 
+      20% 80%,
+      40% 100%;
+    position: relative;
+    clip-path: inset(0 25%);
+    -webkit-mask: linear-gradient(90deg,#0000,#000 25% 75%,#0000);
+    cursor: pointer;
+    transition: 
+      background-position .3s var(--_s,.3s), 
+      clip-path 0s var(--_s,.6s);
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+  }
+  .menu:before,
+  .menu:after {
+    content:"";
+    position: absolute;
+    border-radius: var(--s);
+    inset: 40% 0;
+    background: var(--c);
+    transition: transform .3s calc(.3s - var(--_s,.3s));
+  }
+  
+  .menu:checked {
+    clip-path: inset(0);
+    --_p: calc(-1*var(--s));
+    --_s: 0s;
+  }
+  .menu:checked:before {
+    transform: rotate(45deg);
+  }
+  .menu:checked:after {
+    transform: rotate(-45deg);
+  }
+  .menu:focus-visible {
+    clip-path: none;
+    -webkit-mask: none;
+    border: none;
+    outline: 2px solid var(--c);
+    outline-offset: 5px;
+  }
+
+  /*estilo especialidade*/
+
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 70px;
+}
+
+.especialidades .especialidades-box{
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 50px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #77ffc0;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: #77ffc0;
+}
+
+.especialidades .especialidades-box p{
+    font-size: 30px;
+    margin: 15px 0;
+    color: white;
+
+}
+
+/*para o grafico*/
+
+.titulortx {
+    color: #000000;
+    text-align: center;
+    font-size: 3em
+}
+
+.titulortx h2 span{
+    color: #77ffc0;
+}
+
+.subtitulortx{
+    text-align: center;
+    color: #77ffc0;
+
+}
+
+section.especialidadesrtx{
+    padding: 40px 4%;
+}
+
+section.especialidadesrtx .flex{
+    gap: 70px;
+}
+
+.especialidadesrtx .especialidades-boxrtx {
+    color: white;
+    padding: 40px 2%; /* Reduz o padding para diminuir o tamanho da caixa */
+    border-radius: 15px;
+    margin-top: 50px;
+    transition: 0.2s;
+    background-color: #201b2c;
+    background-repeat: no-repeat;
+    border-image: auto;
+    background-size: cover;
+    width: 80%; 
+    max-width: 400px; 
+    height: auto; 
+    box-sizing: border-box; 
+}
+
+
+.especialidadesrtx .especialidades-boxrtx:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #77ffc0;
+}
+
+.especialidadesrtx .especialidades-boxrtx i{
+    font-size: 70px;
+    color: #77ffc0;
+}
+
+.especialidadesrtx .especialidades-boxrtx p{
+    font-size: 30px;
+    margin: 15px 0;
+    color: white;
+
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.chart-box {
+    background-color: #201b2c; 
+    padding: 17px; 
+    border-radius: 15px; 
+    margin-top: 35px; 
+    transition: 0.2s; 
+    width: 100%; 
+    box-sizing: border-box; 
+    text-align: center; 
+    box-shadow: 0 0 8px #77ffc0; 
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: auto; 
+    position: relative; 
+    border: solid 1px#77ffc0 ; 
+}
+
+.chart-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px; /* Ajuste conforme necessário */
+    
+}
+
+.chart {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+
+
+.botoesdeaaaaa{
+    color: white;
+}
+
+/* Estilos para os botões de monitoramento */
+.botao-monitoramento {
+    padding: 1px 10px;
+    font-size: 15px;
+    font-weight: 800;
+    background-color:#77ffc0;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .2s;
+    line-height: 30px;
+    margin-bottom: 10px; 
+    
+}
+
+.botao-monitoramento:hover {
+    box-shadow: 0px 0px 8px #77ffc0;
+    transform: scale(1.05);
+    background-color:#77ffc0;
+}
+
+
+
+
+
+/* Estilo geral para a seção de diferenciais */
+#evolucao-agricultura {
+    background-color: #201b2c;
+    height: 70vh ;
+    padding: 40px 4%;
+}
+
+.evolucao-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Container que envolve as caixas diferenciais */
+.diferenciais-container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 80px; 
+    padding: 40px 4%; 
+}
+/* Flexbox para as caixas diferenciais */
+.diferenciais-flex {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    width: 100%; 
+    gap: 35px;
+}
+
+/* Estilo para cada caixa diferencial */
+.diferenciais-box {
+    background-color: #00000000; 
+    color: white; 
+    padding: 17px; 
+    border-radius: 15px; 
+    margin-top: 50px; 
+    transition: 0.2s; 
+    width: 24%; 
+    box-sizing: border-box; 
+    text-align: center; 
+    box-shadow: 0 0 8px #77ffc0; 
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 350px; 
+}
+
+/* Estilo quando o mouse passa sobre a caixa */
+.diferenciais-box:hover {
+    transform: scale(1.05); 
+    overflow: visible; 
+}
+
+/* Estilo para ícones dentro das caixas */
+.diferenciais-box i {
+    font-size: 70px; 
+    color: #77ffc0; 
+}
+
+/* Estilo para o título dentro das caixas */
+.diferenciais-box h3 {
+    margin: 15px 0; 
+    font-size: 24px; 
+}
+
+/* Estilo para o texto dentro das caixas */
+.diferenciais-box p {
+    font-size: 16px; 
+    margin: 15px 0; 
+    color: white; 
+    line-height: 1.5; 
+    overflow: hidden; 
+    text-align: center; 
+}
+
+.evolucao-header{
+    text-align: center;
+    font-size: 70px;
+}
+
+.evolucao-header h1{
+    color: #000000;
+}
+
+.evolucao-header h1 span{
+    color: #77ffc0;
+}
+
+
+
+
+/* rodape*/
+
+footer {
+    padding: 40px 4%;
+}
+
+footer .flex-jab{
+    gap: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+footer .especialidades-box, 
+footer .diferenciais-box {
+    color: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 50px;
+    transition: .2s;
+    background-color: #201b2c; /* Cor de fundo para destaque */
+    width: 100%; /* Isso ajusta para que ele se adapte dentro do rodapé */
+    max-width: 350px; /* Limita a largura máxima */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px; /* Ajusta a altura para manter a consistência */
+}
+
+footer .especialidades-box:hover, 
+footer .diferenciais-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #77ffc0;
+}
+
+footer .especialidades-box i,
+footer .diferenciais-box i {
+    font-size: 70px;
+    color: #77ffc0;
+}
+
+footer .especialidades-box p,
+footer .diferenciais-box p {
+    font-size: 30px;
+    margin: 15px 0;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+}
+
+
+
+footer .titulortx {
+    color: #000000;
+    text-align: center;
+}
+
+footer .subtitulortx {
+    color: #77ffc0;
+    text-align: center;
+}
+
+footer .diferenciais-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+footer a.especialidades-box {
+    text-decoration: none;
+    color: inherit; /* Mantém a cor do texto */
+}
+
+footer a.especialidades-box:hover {
+    text-decoration: none; /* Garante que não apareça o sublinhado ao passar o mouse */
+}
+
+/*modificação para o mob*/
+  
+@media only screen and (max-width: 875px) {
+
+    footer .flex-jab{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header .btn-MENU {
+        display: block;
+    }
+
+    header i{
+        display: none;
+    }
+
+    header.rolagem{
+        display: none;
+    }
+
+    #meu-pau {
+        background-color: #514869;
+        height: 175vh ;
+           
+    }
+
+    .TEXTOBOX h3{
+        font-size: 2em;
+    }
+    
+    .TEXTODOPAG .TEXTOBOX{
+        color: rgb(255, 255, 255);
+        padding: 0px 4%;
+        border-radius: 15px;
+        transition: .2s;
+        margin-left: 1%;
+        letter-spacing: 1px;
+        word-spacing: 5px;
+       line-height: 1.5;
+       margin-top: 20px; 
+    }
+    
+    .TEXTODOPAG .TEXTOBOX:hover{
+        box-shadow: 0 0 8px #77ffc0;
+    }
+    
+    .TEXTODOPAG .TEXTOBOX i{
+        font-size: 70px;
+    }
+
+    #evolucao-agricultura {
+        height: 300vh ;
+        padding: 40px 4%;
+    }
+
+    .diferenciais-flex{
+        flex-direction: column;
+    }
+
+    .diferenciais-box {
+        padding: 5px; 
+        border-radius: 15px; 
+        margin-top: 40px; 
+        transition: 0.2s; 
+        width: 24%; 
+        box-sizing: border-box; 
+        text-align: center;  
+        overflow: hidden; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between; 
+        height: 350px;
+        width: 100%
+    }
+    .diferenciais-box p {
+        font-size: 15px; 
+        margin: 15px 0; 
+        line-height: 1.5; 
+        overflow: hidden; 
+        text-align: center; 
+    }
+
+    .evolucao-header{
+        text-align: center;
+        font-size: 3em;
+        
+    }
+
+    .TEXTORT{
+        color: #000000;
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 50px;
+    }
+
+    #OTARIO {
+        background-color: #514869;
+        height: 175vh ;
+    }
+    
+    #chartdiv {
+        width: 100%; 
+        height: 400px; 
+        margin-left: 0px; 
+    }
+   
+    
+    section.especialidadesrtx{
+        padding: 40px 4%;
+    }
+    
+    section.especialidadesrtx .flex{
+        gap: 70px;
+        flex-direction: column;
+    }
+    
+    .especialidadesrtx .especialidades-boxrtx{
+        padding: 70px 10%;
+        border-radius: 15px;
+        margin-top: 70px;
+        transition: .2s;
+        background-repeat: no-repeat;
+        border-image: auto;
+        background-size: cover;
+        
+    }
+    
+    .especialidadesrtx .especialidades-boxrtx:hover{
+        transform: scale(1.05);
+    }
+    
+    .especialidadesrtx .especialidades-boxrtx i{
+        font-size: 70px;
+    }
+    
+    .especialidadesrtx .especialidades-boxrtx p{
+        font-size: 30px;
+        margin: 15px 0;
+    
+    }    
+}
+
+
+

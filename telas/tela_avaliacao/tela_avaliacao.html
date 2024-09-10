@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tela_avaliacao.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Avaliação</title>
+</head>
+<body>
+    <div class="principal-avaliacao">
+        <div class="esquerda-avaliacao">
+            <h1>Deixe sua avaliação</h1>
+            <img src="/telas/images/Arvore.svg" class="imagem-esquerda-avaliacao" alt="Árvore animada">
+        </div>
+        <div class="direita-avaliacao">
+            <div class="card-avaliacao">
+                <h1>Avalie nosso serviço</h1>
+                <form action="#" method="post" id="form-avaliacao">
+                    <div class="campo-texto">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                    </div>
+                    <div class="campo-texto">
+                        <i class="fas fa-star"></i>
+                        <select id="avaliacao" name="avaliacao" required>
+                            <option value="" disabled selected>Classificação</option>
+                            <option value="1">1 Estrela</option>
+                            <option value="2">2 Estrelas</option>
+                            <option value="3">3 Estrelas</option>
+                            <option value="4">4 Estrelas</option>
+                            <option value="5">5 Estrelas</option>
+                        </select>
+                    </div>
+                    <div class="campo-texto">
+                        <i class="fas fa-comment"></i>
+                        <textarea id="comentario" name="comentario" placeholder="Seu comentário" rows="4" required></textarea>
+                    </div>
+                    <button class="botao-avaliacao" type="submit" id="submit-button">Enviar Avaliação</button>
+                </form>
+                <div id="retorno" class="retorno"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('form-avaliacao').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            
+            const botao = document.getElementById('submit-button');
+            botao.classList.add('enviando');
+            
+            
+            document.getElementById('retorno').innerHTML = '<p>Obrigado pela sua avaliação! Seu feedback é muito importante para nós.</p>';
+
+            
+            document.getElementById('form-avaliacao').reset(); 
+
+            
+            setTimeout(function() {
+                window.location.href = "/telas/menu.html"; 
+            }, 300); 
+        });
+    </script>
+</body>
+</html>
