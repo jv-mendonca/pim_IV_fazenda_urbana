@@ -152,7 +152,7 @@ am5.ready(function() {
     }
 
     // Inicializa com o gráfico de "água"
-    showChart('chartdiv1', 'agua');
+    showChart('chartdiv2', 'luz');
 
     // Adiciona eventos aos botões para mudar o gráfico conforme o clique
     document.querySelector(".botao-monitoramento[data-type='agua']").addEventListener('click', function() {
