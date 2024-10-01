@@ -735,11 +735,12 @@ footer {
     background-color: #66e2b5; /* Um tom mais escuro para o hover */
 }
 
+
 /*modificação para o mob*/
   
 @media only screen and (max-width: 1200px) {
 
-    footer .flex-jab{
+    .flex-rodape {
         flex-direction: column;
         align-items: center;
     }
