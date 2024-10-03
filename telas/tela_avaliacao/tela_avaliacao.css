@@ -20,10 +20,18 @@ body {
     flex-wrap: wrap;
     width: 90%;
     max-width: 1200px;
-    height: auto;
     background-color: #201b2c;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+}
+
+/* Ajuste de layout para mobile */
+@media (max-width: 768px) {
+    .principal-avaliacao {
+        flex-direction: column;
+        width: 95%;
+    }
 }
 
 .esquerda-avaliacao {
@@ -42,11 +50,18 @@ body {
     font-size: 2em;
 }
 
+/* Responsividade para imagens */
 .imagem-esquerda-avaliacao {
     width: 80%;
     max-width: 300px; 
     height: auto;
     object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .imagem-esquerda-avaliacao {
+        width: 100%;
+    }
 }
 
 .direita-avaliacao {
@@ -103,12 +118,12 @@ body {
 
 .campo-texto input:focus, .campo-texto select:focus, .campo-texto textarea:focus {
     outline: none;
-    box-shadow: 0 0 6px #77ffc0; /* Cor de foco ajustada */
+    box-shadow: 0 0 6px #77ffc0;
 }
 
 .botao-avaliacao {
-    background-color: #77ffc0; /* Cor do botão */
-    color: #201b2c; /* Cor do texto do botão */
+    background-color: #77ffc0;
+    color: #201b2c;
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
@@ -119,13 +134,13 @@ body {
 }
 
 .botao-avaliacao:hover {
-    background-color: #55e3a0; /* Cor do botão ao passar o mouse */
+    background-color: #55e3a0;
 }
 
 /* Transição suave ao clicar */
 .botao-avaliacao.enviando {
-    background-color: #77ffc0; /* Cor muda suavemente */
-    transition: background-color 1s ease; /* Duração da transição */
+    background-color: #77ffc0;
+    transition: background-color 1s ease;
 }
 
 .retorno {
@@ -140,8 +155,8 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px #201b2c inset !important; /* Cor de fundo do campo */
-    -webkit-text-fill-color: white !important; /* Cor do texto */
+    -webkit-box-shadow: 0 0 0 30px #201b2c inset !important;
+    -webkit-text-fill-color: white !important;
     transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -154,33 +169,32 @@ textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
 textarea:-webkit-autofill:focus,
 textarea:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px #201b2c inset !important; /* Cor de fundo do campo */
-    -webkit-text-fill-color: white !important; /* Cor do texto */
+    -webkit-box-shadow: 0 0 0 30px #201b2c inset !important;
+    -webkit-text-fill-color: white !important;
 }
 
-@media only screen and (max-width: 1080px){
-    .card-login{
+/* Responsividade adicional para telas menores */
+@media only screen and (max-width: 1080px) {
+    .card-avaliacao {
         width: 85%;
     }
 }
-@media only screen and (max-width: 700px){
-    .principal-avaliacao{
+
+@media only screen and (max-width: 700px) {
+    .principal-avaliacao {
         flex-direction: column;
     }
-    .left-login > h1{
+
+    .esquerda-avaliacao h1 {
         display: none;
     }
 
-    .left-login{
-        width: 100%;
-        height: auto;
-    }
-    .right-login{
+    .esquerda-avaliacao, .direita-avaliacao {
         width: 100%;
         height: auto;
     }
 
-    .left-login{
+    .esquerda-avaliacao {
         width: 90%;
     }
 }
