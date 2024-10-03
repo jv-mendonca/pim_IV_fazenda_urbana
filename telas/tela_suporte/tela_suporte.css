@@ -146,3 +146,29 @@ textarea:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px #201b2c inset !important; /* Cor de fundo do campo */
     -webkit-text-fill-color: white !important; /* Cor do texto */
 }
+@media only screen and (max-width: 1080px){
+    .card-login{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 700px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login > h1{
+        display: none;
+    }
+
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login{
+        width: 90%;
+    }
+}

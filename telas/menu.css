@@ -227,13 +227,13 @@ section.TEXTODOPAG.flex{
     gap: 10px;
 }
 
-.TEXTOBOX h3{
+.containergg h3{
     color: #77ffc0;
     font-size: 2em;
 }
 
 
-.TEXTODOPAG .TEXTOBOX{
+.TEXTODOPAG .containergg{
     color: rgb(255, 255, 255);
     padding: 30px 2%;
     border-radius: 15px;
@@ -241,19 +241,23 @@ section.TEXTODOPAG.flex{
     letter-spacing: 1px;
     word-spacing: 10px;
    line-height: 1.5;
-   margin-top: 20px; 
+   margin-top: 100px;
+   width: 4000px;
+    height: 500px;
+    text-align: justify;
+    font-size: 14px;
 }
 
-.TEXTODOPAG .TEXTOBOX:hover{
+.TEXTODOPAG .containergg:hover{
     box-shadow: 0 0 8px #77ffc0;
 }
 
-.TEXTODOPAG .TEXTOBOX i{
+.TEXTODOPAG .containergg i{
     font-size: 60px;
     color: #77ffc0;
 }
 
-.flex .TEXTOBOX{
+.flex .containergg{
     background-color: #201b2cad;
 }
 
@@ -738,7 +742,7 @@ footer {
 
 /*modificação para o mob*/
   
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 875px) {
 
     .flex-rodape {
         flex-direction: column;
@@ -770,24 +774,33 @@ footer {
     .TEXTOBOX h3{
         font-size: 2em;
     }
-    
-    .TEXTODOPAG .TEXTOBOX{
-        color: rgb(255, 255, 255);
-        padding: 0px 4%;
+
+    .TEXTODOPAG .containergg {
         border-radius: 15px;
-        transition: .2s;
-        margin-left: 1%;
+        transition: 0.2s;
         letter-spacing: 1px;
-        word-spacing: 5px;
-       line-height: 1.5;
-       margin-top: 200px; 
+        line-height: 1.5;
+        margin-top: 200px;
+        width: 400px; /* Largura da caixa */
+        height: 500px; /* Altura da caixa */
+        overflow: hidden; /* Esconder o excesso */
+        position: relative;
+        color: rgb(255, 255, 255);
+        padding: 30px 2%;
+        word-spacing: 10px;
+        text-align: justify; /* Alinhamento do texto */
+        font-size: 12px;
+        display: flex;
+        flex-direction: column; /* Alinha os itens na coluna */
+        justify-content: center; /* Centraliza verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
     }
     
-    .TEXTODOPAG .TEXTOBOX:hover{
+    .TEXTODOPAG .containergg:hover{
         box-shadow: 0 0 8px #77ffc0;
     }
     
-    .TEXTODOPAG .TEXTOBOX i{
+    .TEXTODOPAG .containergg i{
         font-size: 70px;
     }
 
@@ -952,8 +965,20 @@ footer {
     border-radius: 15px;
 }
 
+
+.scroll-text {
+    position: absolute;
+    width: 100%;
+    animation: scroll 13s linear infinite; /* Duração da rolagem */
 }
 
+@keyframes scroll {
+    0% {
+        transform: translateY(100%); /* Começa fora da visão */
+    }
+    100% {
+        transform: translateY(-100%); /* Termina fora da visão */
+    }
+}
 
-
-
+}
